@@ -1,5 +1,9 @@
+:root {
+    --foreground: ghostwhite;
+    --background: #222;
+}
 body {
-    background-color: #222;
+    background-color: var(--background);
 }
 
 h1 {
@@ -7,9 +11,23 @@ h1 {
 }
 
 h2, p, pre {
-    color: ghostwhite;
+    color: var(--foreground);
+}
+
+.align-center {
+    text-align: center;
 }
 
 section {
-    border: 1px dashed ghostwhite;
+    border: 1px dashed var(--foreground);
+}
+
+section h2 {
+    background-color: var(--background);
+    border: 1px solid var(--foreground);
+    border-radius: 4px;
+    margin: 20px;
+    padding: 6px;
+    position: relative;
+    top: -35px;
 }
