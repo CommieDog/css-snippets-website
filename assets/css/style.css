@@ -4,12 +4,27 @@
     --accent-color: lightcoral;
     --border-radius: 4px;
 }
+
 body {
     background-color: var(--background);
 }
 
 h1 {
-    color: var(--accent-color); 
+    color: var(--accent-color);
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.25em;
+}
+
+p, pre {
+    font-size: 1.2em;
+}
+
+h1, h2, p
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h2, p, pre {
@@ -23,7 +38,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px 15px;
+    gap: 35px 15px;
 }
 
 section {
