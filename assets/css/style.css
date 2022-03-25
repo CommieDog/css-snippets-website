@@ -23,15 +23,15 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 15px 15px;
 }
 
 section {
-    margin: 15px;
     padding: 10px;
     border: 1px dashed var(--foreground);
     display: flex;
     flex-direction: column;
-    flex-basis: 30%;
+    flex: 1 0 30%;
 }
 
 section h2 {
@@ -50,4 +50,18 @@ section p {
     background-color: var(--accent-color);
     border-radius: var(--border-radius);
     padding: 5px;
+}
+
+@media screen and (max-width: 992px)
+{
+    section {
+        flex: 1 0 45%;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    section {
+        flex: 1 0 95%;
+    }
 }
