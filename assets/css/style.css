@@ -1,13 +1,15 @@
 :root {
     --foreground: ghostwhite;
     --background: #222;
+    --accent-color: lightpink;
+    --border-radius: 4px;
 }
 body {
     background-color: var(--background);
 }
 
 h1 {
-    color: lightpink; 
+    color: var(--accent-color); 
 }
 
 h2, p, pre {
@@ -17,17 +19,31 @@ h2, p, pre {
 .align-center {
     text-align: center;
 }
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 section {
     border: 1px dashed var(--foreground);
+    display: flex;
+    flex-direction: column;
 }
 
 section h2 {
     background-color: var(--background);
     border: 1px solid var(--foreground);
-    border-radius: 4px;
-    margin: 20px;
+    border-radius: var(--border-radius);
+    margin: -15px 20px 0 20px;
     padding: 6px;
-    position: relative;
-    top: -35px;
+}
+
+section p {
+    color: var(--foreground);
+}
+
+.code-snippet {
+    background-color: var(--accent-color);
+    border-radius: var(--border-radius);
+    flex-grow: 2;
 }
