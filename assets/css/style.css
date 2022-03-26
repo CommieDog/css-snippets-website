@@ -63,6 +63,7 @@ section p {
 
 .code-snippet {
     background-color: var(--accent-color);
+    background: linear-gradient(185deg, gray, var(--accent-color));
     border-radius: var(--border-radius);
     padding: 5px;
     user-select: all;
